@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x:hidden;
+    width: 100vw;
+    font-family:'PiratesBay',sans-serif;
+    
+}
+
+.main-section {
+    height:100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.8)), url(../../cap-jack-min.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-div {
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+
+.main-title, .main-subtitle{ 
+    color:#fff;
+    letter-spacing:0.6px;
+}
+
+.main-title { 
+    font-size:64px;
+    font-family:'PiecesOfEight',sans-serif;
+}
+
+.about-section {
+    background-image:url('../../background-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:50px;
+}
+
+.about-div {
+    display:flex;
+    justify-content:space-around;
+    font-family:'PiratesBay',sans-serif;
+}
+
+.wrap {
+    flex-wrap:wrap;
+}
+
+.wrap-reverse {
+    flex-wrap:wrap-reverse;
+}
+
+.biography-div {
+    background:rgba(255, 255, 255, 0.);
+    display:inline-block;
+    width:45%;
+    text-align: justify;
+    letter-spacing:0.6px;
+    color:#1c1c1c;
+}
+
+.member-div { 
+    display: inline-block;
+    width:45%;
+    max-height:auto;
+}
+
+.i3m45g5 {
+    width:100%;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow:0px 0px 20px;
+    max-height:900px;
+    object-position: top;
+}
+
+#about, #main { 
+    width:100%;
+    margin:auto;
+}
+
+.first-paragraph::first-letter{
+    font-size:4rem;
+    float:left;
+    margin:0 1rem;
+    font-family:'PiratesBay',sans-serif;
+    font-weight:bold;
+}
+
+.parallex-section {
+    margin:0;
+    padding:0;
+}
+
+.parallex {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:top;
+    background-size: cover;
+    z-index: 1;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+#parallex-set-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../cap-barbossa-min.jpg');
+}
+
+#parallex-set-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../davy-jones-min.jpg');
+}
+
+#parallex-set-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../blackbeard-min.jpg');
+}
+
+#parallex-set-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../salazar-min.jpg');
+}
+
+@media only screen and (max-width:768px) {
+    .main-div {
+        width:100%;
+    }
+
+    .biography-div{
+        margin-top:50px;
+        width:100%;
+    }
+
+    .member-div {
+        width:100%
+    }
+
+    .i3m45g5 {
+        width:100%;
+        object-fit: cover;
+        border-radius: 5%;
+        box-shadow: 5px 5px 50px;
+        max-height:900px;
+        object-position: top;
+    }
+
+    .about-section {
+        padding:10px;
+    }
+
+}
+
+@media only screen and (max-width:568px){
+
+    .main-title {
+        font-size:3rem;
+    }
+    .main-subtitle{
+        font-size:0.6rem;
+    }
+
+    .biography-div{
+        margin-top:50px;
+        width:100%;
+        font-size:0.9rem;
+    }
+}
+
+
+@font-face {    
+    font-family:PiecesOfEight;
+    src:url(../../Pieces\ of\ Eight.ttf);
+}
+
+@font-face { 
+    font-family:PiratesBay;
+    src:url(../../Piratesbay-d4YK.ttf);
+}
+
+
+
